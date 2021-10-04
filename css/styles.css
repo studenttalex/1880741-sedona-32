@@ -1,0 +1,91 @@
+/*@font-face {
+    font-family: "PT Sans"
+    font-style: normal;
+    font-weight: 400;
+    src: url("font/pt-sans-regular.woff2") format("woff2")
+    font-display:swap;
+}
+@font-face {
+    font-family: "PT Sans"
+    font-style: normal;
+    font-weight: 700;
+    src: url("font/pt-sans-regular.woff2") format("woff2")
+    font-display:swap;
+}
+@font-face {
+    font-family: "PT Sans"
+    font-style: italic;
+    font-weight: 400;
+    src: url("font/pt-sans-regular.woff2") format("woff2")
+}
+@font-face {
+    font-family: "PT Sans"
+    font-style: italic;
+    font-weight: 700;
+    src: url("font/pt-sans-regular.woff2") format("woff2")
+    font-display:swap;
+}
+body {
+    font-family: "PT Sans", sans-serif;
+    font-size: 18px;
+    line-height: 21px;
+    color: #333333;
+    background-color: #ffffff;
+}*/
+/*pages*/
+/*.page-header {
+    color: #333333;
+    background-color: #ffffff;
+}
+.navigation-link {
+    line-height: 26px;
+    color: #000000;
+    font-weight: 700;
+    text-align: center;
+    background-color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.welcome {
+    background-image: url("../img/index-background.jpg");
+    background-size: width="1200" height="485" /*00% auto;*/
+    background-repeat: no-repeat;
+}
+/*advantages*/
+/*.advantages-heading {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000000;
+}
+.advantages-item {
+    background-color: #83B3D3;
+    weight:400px;
+    height: 384px;
+    left: 40px;
+    top: 832px;
+}
+.advantages-text {
+    font-size: 22px;
+    line-height: 36px;
+    font-weight: 400;
+    text-align: center;
+    color: #333333;
+}
+.advantages-title-white {
+    font-size: 24px;
+    line-height: 28px;
+    font-weight: 700;
+    text-align: center;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.advantages-description-white {
+    font-size: 18px;
+    line-height: 21px;
+    font-weight: 400;
+    text-align: center;
+    color: #ffffff;
+}*/
