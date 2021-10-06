@@ -32,16 +32,15 @@ body {
     color: #333333;
     background-color: #ffffff;
 }
-/*.button {
+.button {
     font-family: "PT Sans", sans-serif;
-    font-size: 20px;
-    line-height: 36px;
+    font-size: 16px;
+    line-height: 21px;
     color: #ffffff;
     background-color: #756257;
     text-transform: uppercase;
-    width: 151px;
-    height: 37px;
-}*/
+    
+}
 /*pages*/
 .page-header {
     color: #333333;
@@ -226,8 +225,8 @@ body {
     background-size: 100% auto;
     background-repeat:no-repeat;
     color:#ffffff;
-
 }
+
 .mailing-label {
     font-size: 30px;
     line-height: 36px;
@@ -252,13 +251,14 @@ body {
     font-weight: 400;
     color:#000000;
 }
-.mailing-form button {
+.mailing-form .button {
     width: 200px;
     height: 60px;
     font-size: 20px;
     line-height: 26px;
-    font-weight: 400;
+    font-weight: 700;
     background-color: #83B3D3;
+    color:#ffffff
 }
 /*Социальные сети*/
 .footer-social-twitter{
@@ -303,7 +303,11 @@ body {
     background-repeat: no-repeat;
     background-color: #ffffff;
     color: #ffffff;
-    
+}
+
+/*Фон  раздела поиска гостиниц*/
+.isorting-hotels{
+    background-color: #e5e5e5;
 }
 /*Иконки для слайдшоу*/
 .slideshow-img-title{
@@ -356,7 +360,7 @@ body {
     line-height: 24px;
     font-weight: 400;
 }
-.catalog-filter-butten 
+.catalog-filter-butten, 
 .catalog-filter-butten-reset {
     color: #ffffff;
  }
@@ -371,13 +375,102 @@ body {
     line-height: 23px;
     font-weight: 400;
 }
-.hotels-card-title {
+.hotels-card-link {
     font-size: 24px;
     line-height: 31px;
     font-weight: 700;
     color: #000000;
     text-decoration: none;
+}
+.hotels-card-type, .hotels-card-prise {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #333333;
+}
+.rating {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 400;
+    color: #333333;
+    width: 160px;
+    height: 37px;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    text-align: center;
+}
 
+/*кнопка В избранное*/
+.favourites {
+   
+    width: 160px;
+    height: 37px;
+    background-color: #83b3d3;
+    border-radius: 4px;
+    text-align: center;
+}
+/*кнопка В избранном*/
+.elected {
+  
+    width: 160px;
+    height: 37px;
+    background-color: #7db54f;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.hotels-card-button {
+    width: 160px;
+    height: 37px;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+
+/*Кнопка пагинатора Загрузить еще*/
+.pagination-show-more {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    width: 625px;
+    height: 55px;
+    background-color: #83b3d3;
+    border-radius: 4px;
+    text-align: center;
+}
+/*Кнопки пигинатора*/
+.pagination-link {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #83b3d3;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+/*Кнопка пигинатора на выбранной странице*/
+.pagination-current {
+    font-size: 20px;
+    line-height: 26px;
+    font-weight: 700;
+    color: #000000;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    text-align: center;
+    text-decoration: none;
+}
+.sorting-type {
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 400;
+    color: #333333;
+    background-color: #f2f2f2;
+    border-radius: 4px;
+    
+    
 }
 
 
