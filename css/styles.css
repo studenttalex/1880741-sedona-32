@@ -25,7 +25,14 @@
     src: url("font/pt-sans-regular.woff2") format("woff2")
     font-display:swap;
 }
+html {
+    height: 100%;
+}
 body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
     font-family: "PT Sans", sans-serif;
     font-size: 18px;
     line-height: 21px;
@@ -46,6 +53,25 @@ body {
     color: #333333;
     background-color: #ffffff;
 }
+.navigation {
+    display: flex;
+    justify-content: center;
+    width: 1200px;
+    margin: 0 auto;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
+  .navigation-list {
+    justify-content: center;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    width: 380px;
+}
+.navigation-user {
+    max-width: 250px;
+    margin-left: auto;
+}
 .navigation-link {
     line-height: 26px;
     color: #000000;
@@ -54,6 +80,17 @@ body {
     text-decoration: none;
     text-transform: uppercase;
 }
+.page-container {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  /*Логотип*/
+  .logo {
+    display: block;
+    margin: 0 auto;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  }
 /*Навигация пользователя*/
 .navigation-link-img-serch{
     background-image: url("../img/serch1.svg");
@@ -76,8 +113,10 @@ body {
 .welcome {
     background-color: #ffffff;
     background-image: url("../img/index-background.jpg");
+    width:1200px;
     text-align: center;
-    background-size: 100% auto;
+    margin:0;
+    padding: 0;
     background-repeat: no-repeat;
 }
 /*Разделитель*/
@@ -88,8 +127,34 @@ body {
     background-size: 100% auto;
     background-repeat:no-repeat;
 }
-
+.main-container {
+    flex-grow: 1;
+  }
 /*advantages*/
+.advantages-list {
+    margin: 0;
+    padding: 0;
+}
+.advantages-item1 {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.advantages-services {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.advantages-item2 {
+    display: flex;
+    justify-content: space-between;
+   
+}
+.advantages-conveniences {
+    display: flex;
+    justify-content: space-between;
+}
+
 .advantages-heading {
     font-size: 30px;
     line-height: 36px;
@@ -130,6 +195,7 @@ body {
     text-align: center;
     background-size: 75px 72px;
     background-repeat:no-repeat;
+    width: 400px;
 }
 .advantages-eat {
     background-color: #ffffff;
@@ -137,6 +203,7 @@ body {
     text-align: center;
     background-size: 74px 70px;
     background-repeat:no-repeat;
+    width: 400px;
 }
 .advantages-souvenirs {
     background-color: #ffffff;
@@ -144,6 +211,7 @@ body {
     text-align: center;
     background-size: 64px 76px;
     background-repeat:no-repeat;
+    width: 400px;
 }
 
 .advantages-housing-title,
@@ -179,7 +247,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    text-align: center
+    text-align: center;
+    width: 400px;
 }
 /*Поиск гостиниц*/
 .hotels-search {
@@ -212,21 +281,17 @@ body {
     text-transform: uppercase;
     text-decoration: none;
 }
-/*Футер*/ 
-.page-footer {
-    background-color: #ffffff;
-}
+
 /*Подписка на рассылку*/
 .mailing {
     background-image: url("../img/backgroundmailing.jpg");
     width: 1200px;
     height: 411px;
     text-align: center;
-    background-size: 100% auto;
+   
     background-repeat:no-repeat;
     color:#ffffff;
 }
-
 .mailing-label {
     font-size: 30px;
     line-height: 36px;
@@ -258,8 +323,32 @@ body {
     line-height: 26px;
     font-weight: 700;
     background-color: #83B3D3;
-    color:#ffffff
+    color:#ffffff;
+    text-align: center;
 }
+/*Футер*/ 
+.page-footer {
+    width: 1200px;
+    margin: 0;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    
+   
+}
+
+.footer-columns {
+    display: flex;
+    utline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    width: 1200px;
+}
+.footer-social-list {
+    display: flex;
+    utline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+
+
 /*Социальные сети*/
 .footer-social-twitter{
     background-image: url("../img/social-twitter.svg");
