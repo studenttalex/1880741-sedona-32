@@ -58,8 +58,7 @@ body {
     justify-content: center;
     width: 1200px;
     margin: 0 auto;
-    outline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
+    
   }
   .navigation-list {
     justify-content: center;
@@ -447,26 +446,32 @@ body {
     display: flex;
     width: 190px;
 }
-
-
 .catalog-filter-container {
    display: flex;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
     margin: 0;
-   
-   
-
 }
-
-
 /*Каталог гостиниц*/
 .catalog-filter-title{
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
 }
-
+/*Сетка списка гостиниц*/
+.hotels-card {
+    display: flex;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin: 0;
+}
+/*Сетка сортировка страниц*/
+.sorting-hotels-grid {
+    display: flex;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin: 0;
+}
 .slideshow-list{
     display: flex;
     outline: 5px solid rgba(255, 99, 78, 0.5);

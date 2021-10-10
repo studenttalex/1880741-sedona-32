@@ -109,8 +109,8 @@
                     </li>
                   </ul>
                 </fieldset>
-              </div>
-              <div class="catalog-filter-container">
+              
+              
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Тип жилья:</legend>
                   <ul class="catalog-filter-list">
@@ -137,9 +137,9 @@
                     </li>
                   </ul>
                 </fieldset>
-              </div>
-              <!--Фильтр по цене-->
-              <div class="catalog-filter-container">
+              
+                <!--Фильтр по цене-->
+              
                 <fieldset class="catalog-filter-group">
                   <legend class="catalog-filter-title">Стоимость,&#8381;:</legend>
                   <button class="renge-toggle toggle-min" type="button">
@@ -155,56 +155,60 @@
                     до  <input class="catalog-filter-input" type="number" name="max-price">
                   </label>
                 </fieldset>
+                <form class="catalog-filter-butten" action="https://echo.htmlacademy.ru/" method="get">
+                  <button class="button" type="submit">ПРИМЕНИТЬ</button>
+                </form>
+                <form class="catalog-filter-butten-reset">
+                  <button class="button" type="reset">Сбросить</button>
+                </form>
               </div>
             
-              <form class="catalog-filter-butten" action="https://echo.htmlacademy.ru/" method="get">
-                <button class="button" type="submit">ПРИМЕНИТЬ</button>
-              </form>
-              <form class="catalog-filter-butten-reset">
-                <button class="button" type="reset">Сбросить</button>
-              </form>
-            
+              
             </form>
-            
           </div>
-          
         </div>
       </header>
-  
       <section class="sorting-hotels">
         <!--Сортировка гостиниц-->
-        <p class="found-hotels">Найдено гостиниц:38</p>
-        <form class="sorting-type">
-          <label class="visually-hidden" for="sorting">Сортировка</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="popular">Сначала популярные</option>
-            <option value="cheap">Сначала дешёвые</option>
-            <option value="expensive">Сначала дорогие</option>
-          </select>
-          <button class="visually-hidden" type="submit">Отсортировать гостинницы</button>
-        </form>
+        <div class="sorting-hotels-grid">
+          <!--Выбор слайдшоу-->
+            <ul class="slideshow-list">
+              <li >
+                <p class="found-hotels">Найдено гостиниц:38</p>
+              </li>
+              <li>
+                <form class="sorting-type">
+                  <label class="visually-hidden" for="sorting">Сортировка</label>
+                  <select class="select-control" id="sorting" name="sorting">
+                    <option value="popular">Сначала популярные</option>
+                    <option value="cheap">Сначала дешёвые</option>
+                    <option value="expensive">Сначала дорогие</option>
+                  </select>
+                  <button class="visually-hidden" type="submit">Отсортировать гостинницы</button>
+                </form>
+
+              </li>
+              <li class="slideshow-item">
+               <span class="visually-hidden">Плитка</span>
+               <a class="butten" href="#">
+                 <p class="slideshow-img-title"></p>
+                </a>
+              </li>
+              <li class="slideshow-item">
+                <span class="visually-hidden">На всю страницу</span>
+                <a class="butten" href="#" >
+                  <p class="slideshow-img-mode"></p>
+                </a>
+              </li>
+              <li class="slideshow-item">
+                <span class="visually-hidden">Список</span>
+                <a class="butten" href="#">
+                  <p class="slideshow-img-list"></p>
+                </a>
+              </li>
+            </ul>
+        </div>
         
-        <!--Выбор слайдшоу-->
-        <ul class="slideshow-list">
-          <li class="slideshow-item">
-            <span class="visually-hidden">Плитка</span>
-            <a class="butten" href="#">
-              <p class="slideshow-img-title"></p>
-            </a>
-          </li>
-          <li class="slideshow-item">
-            <span class="visually-hidden">На всю страницу</span>
-            <a class="butten" href="#" >
-              <p class="slideshow-img-mode"></p>
-            </a>
-          </li>
-          <li class="slideshow-item">
-            <span class="visually-hidden">Список</span>
-            <a class="butten" href="#">
-              <p class="slideshow-img-list"></p>
-            </a>
-          </li>
-        </ul>
         <!--Список гостиниц-->
         <ul class="hotels-list">
           <li class="hotels-card">
