@@ -135,22 +135,23 @@ body {
     margin: 0;
     padding: 0;
 }
+/*Сетка для пункта № 1*/
 .advantages-item1 {
     display: flex;
     justify-content: space-between;
-    
 }
-.advantages-services {
+/*Сетка для списка сервисов*/
+.advantages-list-services {
     display: flex;
     justify-content: space-between;
-   
 }
+/*Сетка для пункта №2*/
 .advantages-item2 {
     display: flex;
     justify-content: space-between;
-   
 }
-.advantages-conveniences {
+/*Сетка для удобств*/
+.advantages-list-conveniences {
     display: flex;
     justify-content: space-between;
 }
@@ -254,7 +255,6 @@ body {
 .hotels-search {
     background-color:#ffffff;
     text-align: center;
-    
 }
 .hotels-search-interested {
     font-size: 30px;
@@ -384,6 +384,14 @@ body {
 
 
 /*Страница каталога*/
+/*.page-container {
+    display: flex;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    
+
+}*/
+
 
 /*Фон хедера каталога*/
 .inner-header{
@@ -404,7 +412,6 @@ body {
     width: 16px;
     height: 14px;
     background-repeat: no-repeat;
-   
 }
 .slideshow-img-mode{
     background-image: url("../img/mode-slideshow.svg");
@@ -437,12 +444,35 @@ body {
     font-size: 16px;
     line-height: 21px;
     font-weight: 400;
+    display: flex;
+    width: 190px;
 }
+
+
+.catalog-filter-container {
+   display: flex;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin: 0;
+   
+   
+
+}
+
+
 /*Каталог гостиниц*/
 .catalog-filter-title{
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
+}
+
+.slideshow-list{
+    display: flex;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    margin: 0;
+
 }
 .control-label {
     font-size: 18px;
