@@ -144,6 +144,7 @@ body {
     display: flex;
     justify-content: space-between;
 }
+
 /*Сетка для пункта №2*/
 .advantages-item2 {
     display: flex;
