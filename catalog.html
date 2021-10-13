@@ -48,7 +48,7 @@
             <p class="navigation-link-img-like"></p>
           </a>
         </li>
-        <li class="navigation-item">
+        <li class="navigation-item-here">
           <a class="navigation-link" href="#"> 
             ХОЧУ СЮДА!
           </a>
@@ -277,37 +277,51 @@
             <p class="rating">РЕЙТИНГ:9,2</p>
           </li>
         </ul>
+        
+
   
         <!--Пагинатор-->
         <button class="button pagination-show-more" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
-        <ul class="pagination">
-          <li class="pagination-item">
-            <a class="pagination-link pagination-current">1</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">2</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">3</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">4</a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link-more" href="#">...</div></a>
-          </li>
-          <li class="pagination-item">
-            <a class="pagination-link" href="#">10</a>
-          </li>
-        </ul>
-        <form class="sorting-type">
-          <label class="page-image" for="sorting">Гостиниц на странице:</label>
-          <select class="select-control" id="sorting" name="sorting">
-            <option value="four">4</option>
-            <option value="eight">8</option>
-            <option value="tweive">12</option>
-          </select>
-        </form>
+
+        <div class="pagination-container">
+          
+          <ul class="pagination">
+            <li class="pagination-item">
+              <a class="pagination-link pagination-current">1</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">2</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">3</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">4</a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link-more" href="#"></div></a>
+            </li>
+            <li class="pagination-item">
+              <a class="pagination-link" href="#">10</a>
+            </li>
+            <li class="pagination-item">
+              <form class="sorting-type">
+                <label class="page-image" for="sorting">Гостиниц на странице:</label>
+                <select class="select-control" id="sorting" name="sorting">
+                  <option value="four">4</option>
+                  <option value="eight">8</option>
+                  <option value="tweive">12</option>
+                </select>
+              </form>
+            </li>
+
+          </ul>
+          
+
+        </div>
+        
+        
+        
       </section>
       <section class="mailing-catalog">
         <label class="mailing-label" for="your-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
@@ -324,45 +338,42 @@
   </main>
 
   <!--Футер-->
-  <footer class="page-footer">
-    <!--Социальные сети-->
-
-     <div class="footer-columns">
-       <div  class="footer-social">
-         <h2 class="visually-hidden">Мы в социальных сетях</h2>
-         <ul class="footer-social-list">
-           <li class="footer-social-item">
-             <span class="visually-hidden">Твиттер</span>
-             <a class="button" href="https://twitter.com/htmlacademy_ru">
-               <p class="footer-social-twitter">
-               </p>
-             </a>
-           </li>
-           <li class="footer-social-item">
-             <span class="visually-hidden">Фейсбук</span>
-             <a class="button" href="https://www.facebook.com/htmlacademy" >
-               <p class="footer-social-facebook">
-               </p>
-             </a>
-           </li>
-           <li class="footer-social-item">
-             <span class="visually-hidden">Youtube</span>
-             <a class="button" href="https://www.youtube.com/HTMLacademyRUS">
-               <p class="footer-social-youtube">
-               </p>
-             </a>
-           </li>
-         </ul>
-       </div>
-       <a class="footer-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
-       <p class="footer-link">
-         <a class="htmlacademy-link" href="https://htmlacademy.ru">
-           <p class="htmlacademy-linke-img">
-           </p>
-         </a>
-       </p>
-     
-     </div>
-   </footer>
+  <  <footer class="page-footer">
+    <div class="page-footer-container">
+      <!--Социальные сети-->
+      <div  class="footer-social">
+        <h2 class="visually-hidden">Мы в социальных сетях</h2>
+        <ul class="footer-social-list">
+          <li class="footer-social-item">
+            <span class="visually-hidden">Твиттер</span>
+            <a class="button" href="https://twitter.com/htmlacademy_ru">
+              <p class="footer-social-twitter">
+              </p>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <span class="visually-hidden">Фейсбук</span>
+            <a class="button" href="https://www.facebook.com/htmlacademy" >
+              <p class="footer-social-facebook">
+              </p>
+            </a>
+          </li>
+          <li class="footer-social-item">
+            <span class="visually-hidden">Youtube</span>
+            <a class="button" href="https://www.youtube.com/HTMLacademyRUS">
+              <p class="footer-social-youtube">
+              </p>
+            </a>
+          </li>
+          
+        </ul>
+      </div>
+      <a class="footer-phone" href="tel:+7(812)812-12-12">+7 (812) 812-12-12</a>
+      <p class="footer-link">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru">
+          <p class="htmlacademy-linke-img">
+          </p>
+        </a>
+      </p>
 </body>
 </html>
