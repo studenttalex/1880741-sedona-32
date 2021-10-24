@@ -162,13 +162,11 @@
                   <button class="button" type="reset">Сбросить</button>
                 </form>
               </div>
-            
-              
             </form>
           </div>
         </div>
       </header>
-      <section class="sorting-hotels">
+      <div class="sorting-hotels">
         <!--Сортировка гостиниц-->
         <div class="sorting-hotels-grid">
           <!--Выбор слайдшоу-->
@@ -214,67 +212,70 @@
           <li class="hotels-card">
             <a class="hotels-card-link" href="product.html">
               <img class="hotels-card-image" src="img/hotel-1.jpg" width="180" height="120" alt="Фото гостиницы">
-              <h3 class="hotels-card-title">Amara Resort & Spa</h3>  
             </a>
+            <h3 class="hotels-card-title">Amara Resort & Spa</h3> 
             <p class="hotels-card-type">Гостиница</p>
             <p class="hotels-card-prise">От 4000 &#8381;</p>
             <a href="#" class="hotels-card-button button">ПОДРОБНЕЕ</a>
-            <button class="button favourites" type="submit">В ИЗБРАННОЕ</button>
-            <ul class="classification">
+            <button class=" button-favourites" type="submit">В ИЗБРАННОЕ</button>
+            <ul class="classification classification-star">
               <li class="classification-img"></li>
               <li class="classification-img"></li>
               <li class="classification-img"></li>
               <li class="classification-img"></li>
             </ul>
-            <p class="rating">РЕЙТИНГ:8,5</p>
+            <p class="rating rating-positioning">РЕЙТИНГ:8,5</p>
           </li>
           <li class="hotels-card">
             <a class="hotels-card-link" href="product.html">
               <img class="hotels-card-image" src="img/hotel-2.jpg" width="180" height="120" alt="Фото гостиницы">
-              <h3 class="hotels-card-title">Desert Quail Inn</h3>  
+              
             </a>
+            <h3 class="hotels-card-title">Desert Quail Inn</h3>  
             <p class="hotels-card-type">Мотель</p>
             <p class="hotels-card-prise">От 3000 &#8381;</p>
             <a href="#" class="hotels-card-button button">ПОДРОБНЕЕ</a>
-            <button class="button favourites" type="submit">В ИЗБРАННОЕ</button>
-            <ul class="classification">
+            <button class="button-favourites" type="submit">В ИЗБРАННОЕ</button>
+            <ul class="classification classification-star">
               <li class="classification-img"></li>
               <li class="classification-img"></li>
               <li class="classification-img"></li>
             </ul>
-            <span class="rating">РЕЙТИНГ:8,9</span>
+            <span class="rating rating-positioning">РЕЙТИНГ:8,9</span>
           </li>
           <li class="hotels-card">
             <a class="hotels-card-link" href="product.html">
               <img class="hotels-card-image" src="img/hotel-3.jpg" width="180" height="120" alt="Фото гостиницы">
-              <h3 class="hotels-card-title">Villas at Poco Diablo</h3>  
+
             </a>
+            <h3 class="hotels-card-title">Villas at Poco Diablo</h3>  
             <p class="hotels-card-type">Аппартаменты</p>
             <p class="hotels-card-prise">От 2000 &#8381;</p>
             <a href="#" class="hotels-card-button button">ПОДРОБНЕЕ</a>
             <button class="button elected" type="submit">В ИЗБРАННОM</button>
-            <ul class="classification">
+            <ul class="classification classification-star">
               <li class="classification-img"></li>
               <li class="classification-img"></li>
               <li class="classification-img"></li>
             </ul>
-            <p class="rating">РЕЙТИНГ:9,2</p>
+            <p class="rating rating-positioning">РЕЙТИНГ:9,2</p>
           </li>
           <li class="hotels-card">
             <a class="hotels-card-link" href="product.html">
               <img class="hotels-card-image" src="img/hotel-4.jpg" width="180" height="120" alt="Фото гостиницы">
-              <h3 class="hotels-card-title">GreenTree Inn</h3>  
+              
             </a>
+            <h3 class="hotels-card-title">GreenTree Inn</h3> 
             <p class="hotels-card-type">Гостиница</p>
             <p class="hotels-card-prise">От 3000 &#8381;</p>
             <a href="#" class="hotels-card-button button">ПОДРОБНЕЕ</a>
-            <button class="button favourites" type="submit">В ИЗБРАННОЕ</button>
-            <ul class="classification">
+            <button class="button-favourites" type="submit">В ИЗБРАННОЕ</button>
+            <ul class="classification-star classification">
               <li class="classification-img"></li>
               <li class="classification-img"></li>
               <li class="classification-img"></li>
             </ul>
-            <p class="rating">РЕЙТИНГ:9,2</p>
+            <p class="rating rating-positioning">РЕЙТИНГ:9,2</p>
           </li>
         </ul>
         
@@ -284,7 +285,6 @@
         <button class="button pagination-show-more" type="button">ЗАГРУЗИТЬ ЕЩЕ</button>
 
         <div class="pagination-container">
-          
           <ul class="pagination">
             <li class="pagination-item">
               <a class="pagination-link pagination-current">1</a>
@@ -299,30 +299,23 @@
               <a class="pagination-link" href="#">4</a>
             </li>
             <li class="pagination-item">
-              <a class="pagination-link-more" href="#"></div></a>
+              <a class="pagination-link-more" href="#"></a>
             </li>
             <li class="pagination-item">
               <a class="pagination-link" href="#">10</a>
             </li>
-            <li class="pagination-item">
-              <form class="sorting-type">
-                <label class="page-image" for="sorting">Гостиниц на странице:</label>
-                <select class="select-control" id="sorting" name="sorting">
+          
+            <form class="sorting-type">
+              <label class="page-image" for="sorting">Гостиниц на странице:</label>
+              <select class="select-control" id="sorting" name="sorting">
                   <option value="four">4</option>
                   <option value="eight">8</option>
                   <option value="tweive">12</option>
-                </select>
-              </form>
-            </li>
-
+              </select>
+            </form>
           </ul>
-          
-
         </div>
-        
-        
-        
-      </section>
+      </div>  
       <section class="mailing-catalog">
         <label class="mailing-label" for="your-mail">ПОДПИШИТЕСЬ НА РАССЫЛКУ</label>
         <p class="mailing-description">Только полезная информация и никакого спама, честное бойскаутское!</p>
@@ -338,7 +331,7 @@
   </main>
 
   <!--Футер-->
-  <  <footer class="page-footer">
+  <footer class="page-footer">
     <div class="page-footer-container">
       <!--Социальные сети-->
       <div  class="footer-social">
@@ -375,5 +368,11 @@
           </p>
         </a>
       </p>
+
+    </div>
+      
+
+  </footer>
+    
 </body>
 </html>

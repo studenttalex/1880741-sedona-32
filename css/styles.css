@@ -67,6 +67,7 @@ body {
     display: flex;
     width: 1200px;
     margin: 0 auto;
+    justify-content: space-between;
   }
   .navigation-list {
     display: flex;
@@ -91,7 +92,8 @@ body {
     text-align: center;
     text-decoration: none;
     text-align: center;
-    padding: 20px 15px;
+    margin: 0;
+    padding: 10px 15px;
     display: block;
     background-color: #ffffff;
     outline: 5px solid rgba(255, 99, 78, 0.5);
@@ -119,11 +121,12 @@ body {
   }
   /*Логотип*/
   .logo-header {
-    margin: 0 auto;
+    
   
   }
   .logo {
-    
+    margin-left: auto;
+    margin-right: auto;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
   }
@@ -167,32 +170,111 @@ body {
     margin: 0;
     padding: 0;
     list-style-type: none;
-    
 }
 /*Сетка для пункта № 1*/
-.advantages-item1 {
+.advantages-list-reason-1 {
     display: flex;
-    justify-content: space-between;
+    
 }
+.advantages-item1 {
+    width: 400px;
+    
+}
+
 /*Сетка для списка сервисов*/
 .advantages-list-services {
     display: flex;
     justify-content: space-between;
 }
 
-
 /*Сетка для пункта №2*/
-.advantages-item2 {
+.advantages-list-reason-2 {
     display: flex;
     justify-content: space-between;
 }
-/*Сетка для удобств. */
+.advantages-item2 {
+    width: 400px;
+    
+}
+.advantages-title-white {
+    width: 250px;
+    height: 60px;
+    margin-top: 98px;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advantages-description-white {
+    width: 250px;
+    height: 25px;
+    margin-bottom: 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.advantages-description-whit {
+    width: 220px;
+    height: 90px;
+    margin-bottom: 77px;
+    margin-left: auto;
+    margin-right: auto;
+}
+/*Сетка для удобств.*/
 .advantages-list-conveniences {
     display: flex;
     justify-content: space-between;
 }
-
-
+/*Микросетка для списка сервисов*/
+.advantages-housing,
+.advantages-eat,
+.advantages-souvenirs {
+    display: grid;
+    grid-template-columns: 75px 250px 75px;
+    grid-template-rows: 89px 75px 23px 28px 20px 73px 79px;
+    
+}
+/*Микросетка для пунктов 3-5*/
+.advantages-item3,
+.advantages-item4,
+.advantages-item5 {
+    display: grid;
+    grid-template-columns: 75px 250px 75px;
+    grid-template-rows: 98px 60px 25px 25px 20px 73px 77px;
+}
+.advantages-title {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin:0;
+    padding:0;
+    
+    
+}
+.advantages-description-1 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-left: auto;
+    
+    margin-right: auto;
+    
+    
+}
+.advantages-description-2 {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+   
+    margin-left: auto;
+    
+    margin-right: auto;
+    
+    
+    
+}
+/*Заголовок Седона*/
 .advantages-heading {
     font-size: 30px;
     line-height: 36px;
@@ -236,15 +318,20 @@ body {
     text-align: center;
     color: #ffffff;
 }
-
+/*фоны для списков сервисов*/
 .advantages-housing {
-    background-color: #ffffff;
+    background-color: rgba(131, 179, 211, 0.12);
     background-image: url("../img/iconhose.svg");
     text-align: center;
     background-size: 75px 72px;
     background-repeat:no-repeat;
     width: 400px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
     height: 384px;
+    
 }
 .advantages-eat {
     background-color: #ffffff;
@@ -253,16 +340,24 @@ body {
     background-size: 74px 70px;
     background-repeat:no-repeat;
     width: 400px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
 .advantages-souvenirs {
-    background-color: #ffffff;
+    background-color:rgba(131, 179, 211, 0.12);
     background-image: url("../img/iconsouvenirs.svg");
     text-align: center;
     background-size: 64px 76px;
     background-repeat:no-repeat;
     width: 400px;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
 }
-
+/*Пункты со списком сервисов*/
 .advantages-housing-title,
 .advantages-eat-title,
 .advantages-souvenirs-title {
@@ -271,6 +366,11 @@ body {
     font-weight: 700;
     text-align: center;
     text-transform: uppercase;
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+  
 }
 .advantages-housing-description,
 .advantages-eat-description,
@@ -279,13 +379,21 @@ body {
     line-height: 21px;
     font-weight: 400;
     text-align: center;
+   
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    width:
 }
+/*фон пунктов 3-5*/
 .advantages-item3,.advantages-item5 {
     background-color: rgba(131, 179, 211, 0.12);
 }
 .advantages-item4 {
     background-color: rgba(131, 179, 211, 0.2);
 }
+/*шрифт пунктов 3-5*/
 .advantages-title {
     font-size: 24px;
     line-height: 28px;
@@ -296,8 +404,8 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
-    text-align: center;
-    width: 400px;
+    
+    
 }
 /*Поиск гостиниц*/
 .hotels-search {
@@ -336,10 +444,10 @@ body {
     width: 1200px;
     height: 411px;
     text-align: center;
-   
     background-repeat:no-repeat;
     color:#ffffff;
 }
+
 .mailing-label {
     font-size: 30px;
     line-height: 36px;
@@ -351,28 +459,39 @@ body {
     font-weight: 400;
 }
 .mailing-form {
+    display: grid;
+    grid-template-columns: 600px 200px;
+   
     font-size:20px;
     line-height:26px;
     font-weight:700;
     text-align: center;
 }
+.input-field {
+    grid-column: 1 / 2;
+    margin-left: 200px;
+}
+.mailing-submit {
+    grid-column: 2 / 3;
+    margin-right: a200px;
+}
 .mailing-form input {
-    width: 600px;
-    height: 60px;
+    
+    
     font-size: 18px;
     line-height: 26px;
     font-weight: 400;
     color:#000000;
 }
 .mailing-form .button {
-    width: 200px;
+    
     height: 60px;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
     background-color: #83B3D3;
     color:#ffffff;
-    text-align: center;
+   
 }
 /*Футер*/ 
 
@@ -536,22 +655,23 @@ body {
 /*Сетка сортировка страниц*/
 .sorting-hotels-grid {
     
-    margin-bottom: 16px;
-    padding: 16px;
+    
     
 }
 .slideshow-list{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
     margin: 0;
+    padding: 0;
     width: 1200px;
     list-style-type: none;
 
 }
 .sorting-type {
     margin-right: auto;
+    width: 372px;
 }
 .control-label {
     font-size: 18px;
@@ -579,6 +699,126 @@ body {
     margin: 0;
     padding: 0;
 }
+.hotels-card {
+    display:grid;
+    grid-template-columns: 72px 180px 36px 151px 8px 160px 361px 160px 72px;
+    grid-template-rows: 28px 31px 23px 31px 37px 30px;
+  
+    
+
+}
+/*.hotels-card {
+    display:grid;
+    grid-template-columns: 180px 151px 160px 160px;
+    grid-template-rows: 31px 55px 37px;
+    grid-template-areas: "image title title stars"
+                          "image hotels prise prise"
+                          "image detailed favourites rating";
+    
+    padding-left:72px;
+    padding-right:72px;
+    padding-top: 31px;
+    padding-bottom: 30px ;
+    
+
+}
+.hotels-card-link {
+    grid-area:image;
+}
+.hotels-card-title {
+    grid-area:title;
+    margin-left: 36px;
+
+}
+.classification {
+    grid-area:stars;
+}
+.hotels-card-type {
+    grid-area:hotels;
+    width: 151px;
+    margin-left: 36px;
+}
+.hotels-card-prise {
+    grid-area:prise;
+    margin-left: 8px;
+}
+.hotels-card-button {
+    grid-area:detailed;
+    width: 151px;
+    margin-left: 36px;
+}
+.button-favourites {
+    grid-area:favourites;
+    width: 151px;
+    margin-left: 8px;
+}
+.rating {
+    grid-area:rating;
+}*/
+.hotels-card-link {
+    
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    
+ 
+    
+}
+.hotels-card-title {
+    grid-column-start: 4;
+    grid-column-end: 7;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    
+   
+}
+.hotels-card-type {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 4;
+    
+}
+.hotels-card-prise {
+    grid-column-start:6;
+    grid-column-end: 7;
+    grid-row-start: 3;
+    grid-row-end: 4;
+}
+.hotels-card-button {
+    grid-column-start: 4;
+    grid-column-end: 5;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+.button-favourites,
+.elected {
+    grid-column-start: 6;
+    grid-column-end: 7;
+    grid-row-start: 5;
+    grid-row-end: 6;
+   
+}*/
+.classification-star {
+    
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.classification {
+    display:flex;
+    
+
+}
+.rating-positioning {
+    grid-column-start: 8;
+    grid-column-end: 9;
+    grid-row-start: 5;
+    grid-row-end: 6;
+}
+
 .hotels-card-link {
     font-size: 24px;
     line-height: 31px;
@@ -602,10 +842,11 @@ body {
     background-color: #f2f2f2;
     border-radius: 4px;
     text-align: center;
+    
 }
 
 /*кнопка В избранное*/
-.favourites {
+.button-favourites {
    
     width: 160px;
     height: 37px;
@@ -654,6 +895,7 @@ body {
 }
 /*Кнопка пагинатора Загрузить еще*/
 .pagination-show-more {
+    display:flex;
     font-size: 20px;
     line-height: 26px;
     font-weight: 700;
@@ -665,6 +907,8 @@ body {
     text-align: center;
     margin-left: auto;
     margin-right: auto;
+    margin-top:31px;
+    margin-bottom:30px ;
 }
 /*Кнопки пигинатора*/
 .pagination-link {
@@ -702,8 +946,9 @@ body {
     text-align: center;
     text-decoration: none;
 }
+/*Сортировка гостиниц*/
 .sorting-type {
-    display: flex;
+    
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
@@ -712,11 +957,43 @@ body {
     border-radius: 4px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
-    
+    margin-left: auto;
     
 }
+.mailing-catalog {
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+    display:grid;
+    width: 1200px;
+    grid-template-columns: 200px 800px 200px;
+    grid-template-rows: 89px 50px 15px 72px 26px 60px 138px;
+}
+.mailing-label {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    margin-top: auto;
+    margin-right: auto;
 
+}
+.mailing-description {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 4;
+    grid-row-end: 5;
+    margin-top: auto;
+    margin-right: auto;
+}
+.mailing-form {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 6;
+    grid-row-end: 7;
+    margin-top: auto;
+    margin-right: auto;
 
+}
 
 
 
