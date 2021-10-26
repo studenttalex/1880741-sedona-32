@@ -765,11 +765,12 @@ body {
  
     
 }
-.hotels-card-title {
+.hotels-card-title-link {
     grid-column-start: 4;
     grid-column-end: 7;
     grid-row-start: 2;
     grid-row-end: 3;
+    text-decoration: none;
     
    
 }
@@ -799,7 +800,7 @@ body {
     grid-row-start: 5;
     grid-row-end: 6;
    
-}*/
+}
 .classification-star {
     
     grid-column-start: 8;
@@ -819,7 +820,7 @@ body {
     grid-row-end: 6;
 }
 
-.hotels-card-link {
+.hotels-card-title {
     font-size: 24px;
     line-height: 31px;
     font-weight: 700;
@@ -875,10 +876,12 @@ body {
 /*Пагинатор*/
 .pagination-container {
     display: flex;
-    width: 400px;
+    width: 1073px;
     padding: 25px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
+    margin-left: 72px;
+    justify-content: space-between;
     
 }
 
@@ -948,7 +951,7 @@ body {
 }
 /*Сортировка гостиниц*/
 .sorting-type {
-    
+   
     font-size: 18px;
     line-height: 23px;
     font-weight: 400;
@@ -957,7 +960,8 @@ body {
     border-radius: 4px;
     outline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
-    margin-left: auto;
+    margin-left: 302px;
+    width: 406px;
     
 }
 .mailing-catalog {
