@@ -38,14 +38,22 @@ body {
     line-height: 21px;
     color: #333333;
     background-color: #ffffff;
+    outline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+  
+
 }
 .button {
+    display: inline-block;
+    padding: 14px 20px;
     font-family: "PT Sans", sans-serif;
     font-size: 16px;
     line-height: 21px;
     color: #ffffff;
     background-color: #756257;
+    border: none;
     text-transform: uppercase;
+    cursor: pointer;
   
 }
 .visually-hidden {
@@ -66,6 +74,7 @@ body {
 .navigation {
     display: flex;
     width: 1200px;
+    height: 65px;
     margin: 0 auto;
     justify-content: space-between;
   }
@@ -132,20 +141,22 @@ body {
   }
 /*Навигация пользователя*/
 .navigation-link-img-serch{
-    background-image: url("../img/serch1.svg");
+   
     text-align: center;
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;
     background-color: #ffffff;
+    margin-bottom: 24px;
 }
 .navigation-link-img-like{
-    background-image: url("../img/heart.svg");
+   
     text-align: center;
     width: 18px;
     height: 18px;
     background-repeat: no-repeat;
     background-color: #ffffff;
+    margin-bottom: 24px;
 }
 
 /*Добро пожаловать*/
@@ -160,7 +171,7 @@ body {
     padding: 0;
     background-repeat: no-repeat;
 }
-/*Разделитель*/
+
 
 .main-container {
     flex-grow: 1;
@@ -321,7 +332,7 @@ body {
 /*фоны для списков сервисов*/
 .advantages-housing {
     background-color: rgba(131, 179, 211, 0.12);
-    background-image: url("../img/iconhose.svg");
+  
     text-align: center;
     background-size: 75px 72px;
     background-repeat:no-repeat;
@@ -335,7 +346,7 @@ body {
 }
 .advantages-eat {
     background-color: #ffffff;
-    background-image: url("../img/iconeat.svg");
+    
     text-align: center;
     background-size: 74px 70px;
     background-repeat:no-repeat;
@@ -347,7 +358,7 @@ body {
 }
 .advantages-souvenirs {
     background-color:rgba(131, 179, 211, 0.12);
-    background-image: url("../img/iconsouvenirs.svg");
+   
     text-align: center;
     background-size: 64px 76px;
     background-repeat:no-repeat;
@@ -357,6 +368,13 @@ body {
     grid-row-start: 2;
     grid-row-end: 3;
 }
+/*Позиционирование иконок*/
+.advantages-icon{
+    margin-left: 162px;
+    margin-right: 163px;
+    margin-top: 29px;
+}
+
 /*Пункты со списком сервисов*/
 .advantages-housing-title,
 .advantages-eat-title,
@@ -404,11 +422,14 @@ body {
     font-size: 18px;
     line-height: 21px;
     font-weight: 400;
+    text-align: center;
     
     
 }
 /*Поиск гостиниц*/
 .hotels-search {
+    display: flex;
+    flex-direction: column;
     background-color:#ffffff;
     text-align: center;
 }
@@ -417,17 +438,28 @@ body {
     line-height: 36px;
     font-weight: 700;
     text-transform:uppercase;
+    margin-top:91px ;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom 15px;
 }
 .hotels-search-data {
     font-size: 22px;
     line-height: 26px;
     font-weight: 400;
+    width: 720px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 73px;
 }
 .hotels-search-button   {
     background-color: #756257;
     width: 575px;
     height: 60px;
     text-align: center;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom: 91px;
 }
 .hotels-search-button a  {
     font-size: 20px;
@@ -440,6 +472,8 @@ body {
 
 /*Подписка на рассылку*/
 .mailing {
+    display: flex;
+    flex-direction: column;
     background-image: url("../img/backgroundmailing.jpg");
     width: 1200px;
     height: 411px;
@@ -452,16 +486,29 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
+    margin-top:94px ;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom 15px;
+
 }
 .mailing-description {
     font-size: 22px;
     line-height: 36px;
     font-weight: 400;
+    width: 720px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-bottom 15px;
 }
 .mailing-form {
     display: grid;
     grid-template-columns: 600px 200px;
-   
+    width: 800px;
+    height: 60px;
+    margin-bottom: 94px;
+    margin-left: auto;
+    margin-right: auto;
     font-size:20px;
     line-height:26px;
     font-weight:700;
@@ -469,11 +516,11 @@ body {
 }
 .input-field {
     grid-column: 1 / 2;
-    margin-left: 200px;
+    
 }
 .mailing-submit {
     grid-column: 2 / 3;
-    margin-right: a200px;
+    
 }
 .mailing-form input {
     
@@ -498,33 +545,50 @@ body {
 
 .page-footer-container {
     display: flex;
+    justify-content: space-between;
     utline: 5px solid rgba(255, 99, 78, 0.5);
     outline-offset: -5px;
     width: 1200px;
+    height: 120px;
     margin: 0 auto;
     padding: 40px 0;
 }
 .footer-social {
-    margin-right: auto;
+   
     max-width: 190px;
+    utline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
+}
+.footer-social-twitter {
+    display: block;
+    margin-bottom: 55px;
+
+}
+.footer-social-facebook {
+    display: block;
+    margin-left: 29px;
+    margin-bottom: 53px;
+
+}
+.footer-social-youtube {
+    display: block;
+    margin-left: 30px;
+    margin-bottom: 54px;
+
 }
 .footer-social-list {
+    utline: 5px solid rgba(255, 99, 78, 0.5);
+    outline-offset: -5px;
     display: flex;
     flex-wrap: wrap;
     list-style-type: none;
     margin: 0;
     padding: 0;
-    margin-left:72px;
+    margin-left: 72px;
+    
+    
 }
-.footer-social-item {
-    utline: 5px solid rgba(255, 99, 78, 0.5);
-    outline-offset: -5px;
-    width: 20px;
-    height: 16px;
-}
-.footer-social-item:nth-child(3n){
-    margin-left: 0;
-}
+
 
 /*Социальные сети*/
 .footer-social-twitter{
@@ -545,19 +609,37 @@ body {
     height: 16px;
     background-repeat:no-repeat;
 }
+
+
 .footer-phone {
-    width: 720px;
+  
+   
     font-size: 40px;
+    color: #000000;
     line-height: 240x;
     font-weight: 400;
     text-decoration: underline;
     text-transform: uppercase;
+  
+    text-decoration: none;
+   
    }
+.footer-phone-container {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    width: 720px;
+   
+
+
+}
 .htmlacademy-linke-img{
     background-image: url("../img/logo-htmlacademy.svg");
     width: 115px;
     height: 34px;
     background-repeat:no-repeat;
+    margin-right: 72px;
 }
 
 
@@ -986,8 +1068,10 @@ body {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
+    width: 720px;
     margin-top: auto;
     margin-right: auto;
+    text-align: center;
 }
 .mailing-form {
     grid-column-start: 2;
@@ -996,6 +1080,7 @@ body {
     grid-row-end: 7;
     margin-top: auto;
     margin-right: auto;
+    border-radius: 5px;
 
 }
 
