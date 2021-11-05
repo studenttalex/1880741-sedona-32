@@ -59,6 +59,10 @@ body {
     width: 151px;
     height: 37px;
     text-align: center;
+  
+   
+    
+    
     
     
 }
@@ -212,18 +216,18 @@ body {
 }
 
 .navigation-user .navigation-link {
-    min-width: 16px;
-    min-height: 22px;
+    min-width: 18px;
+    min-height: 18px;
     
     
 }
-.navigation-item-search {
-   
+.navigation-item-liked {
+    margin-left:21px;
    
 }
 .navigation-item-button {
-    margin:0;
-    padding:0;
+    margin-left:33px;
+  
    
 }
 
@@ -238,7 +242,8 @@ body {
     text-decoration: none;
     display: block;
     background-color: #ffffff;
-    margin-right: 33px;
+    padding: 5px;
+   
     outline: none;
     outline: 5px solid rgba(199, 16, 16, 0.5);
     outline-offset: -5px;
@@ -251,12 +256,12 @@ body {
     color: #756257;
     border: 3px solid #83B3D3;
   }
-.navigation-link:hover.navigation-icon {
-    fill: #faf3ef;
+.navigation-link:hover .navigation-icon path {
+    fill: #756257;
   }
   
-.navigation-link:focus.navigation-icon {
-    fill: #e4dbd6;
+.navigation-link:focus .navigation-icon path {
+    fill: #756257;
     border: 3px solid #83B3D3;
     border-radius: 4px;
   }
@@ -654,6 +659,7 @@ body {
     margin-bottom: 73px;
 }
 .hotels-search-button   {
+   
     font-size: 20px;
     line-height: 36px;
     font-weight: 700;
@@ -754,12 +760,9 @@ body {
     width: 1200px;
     height: 120px;
     margin: 0 auto;
-    
 }
 .footer-social {
     min-width: 200px;
-    
-   
 }
 
 .footer-social-list {
@@ -769,38 +772,23 @@ body {
     margin: 0;
     padding: 0;
     margin-left: 112px;
-  
 }
-
 
 /*Социальные сети*/
 .footer-social-twitter{
-    background-image: url("../img/social-twitter.svg");
-    width: 20px;
-    height: 16px;
-    background-repeat:no-repeat;
-    display: block;
-  
+   
     margin-top: 50px;
     margin-bottom: 55px;
-
 }
 .footer-social-facebook{
-    background-image: url("../img/social-facebook.svg");
-    width: 20px;
-    height: 16px;
-    background-repeat:no-repeat;
-    display: block;
+ 
+    
     margin-top: 49px;
     margin-left: 29px;
     margin-bottom: 53px;
 }
 .footer-social-youtube{
-    background-image: url("../img/social-youtube.svg");
-    width: 20px;
-    height: 16px;
-    background-repeat:no-repeat;
-    display: block;
+   
     margin-top: 50px;
     margin-left: 30px;
     margin-bottom: 54px;
@@ -811,19 +799,17 @@ body {
     padding: 15px 15px;
     cursor: pointer;
     border: none;
-    
-    
-   
-    
 }
 /*состояния ссылок на социальные сети*/
 
-.button-social:hover {
+.button-social path:hover {
     fill: #62A2CA;
   }
   
-.button-social:focus {
-    border: 5px solid #62A2CA;
+.button-social path:focus {
+    fill: #62A2CA;
+    outline: 5px solid #62A2CA;
+    border-radius: 5px;
     
   }
 .footer-phone {
@@ -862,32 +848,28 @@ body {
     margin: 0;
     padding: 0;
     margin-right: 112px;
-    
     margin-top: 43px;
+    display: block;
 }
 .htmlacademy-link-img{
-    background-image: url("../img/logo-htmlacademy.svg");
-    margin: 0;
-    padding: 0;
-    width: 115px;
-    height: 34px;
-    background-repeat:no-repeat;
-   
+    
+    background-color: #ffffff;
+    padding: 5px;
+    
+    outline: 5px solid rgba(199, 16, 16, 0.5);
+    outline-offset: -5px;
 }
-.htmlacademy-link:hover {
+.htmlacademy-link path:hover {
     fill: #756257;
-}
+  }
   
-.htmlacademy-link:focus {
+.htmlacademy-link path:focus {
     fill: #756257;
     border: 3px solid #62A2CA;
     border-radius: 5px;
-    
-}
-.htmlacademy-link:visited {
-    fill: #756257;
-    opacity: 0.3;
-}
+  }
+
+
 
 /*Страница каталога*/
 
