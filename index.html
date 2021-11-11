@@ -55,6 +55,58 @@
                Понравилось
               </span>
             </a>
+            <div class="popover popover-cart popover-open">
+              <!--<button class="popover-close-button button button-light">
+                2
+                <span class="visually-hidden">Закрыть</span>
+              </button>-->
+              
+              <div class="popover-content">
+                <h2 class="visually-hidden">Избранные</h2>
+                <ul class="cart-items-list">
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="product.html">
+                      <img class="cart-item-image" src="img/hotel-2.jpg" width="48" height="48" alt="Фото гостиницы" >
+                      <h3 class="cart-item-title" >Desert Quail Inn</h3> 
+                      <p class="cart-item-type">Мотель</p>
+                    </a>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.2">
+                        <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                        <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                        <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                        <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
+                        </g>
+                        </svg>
+                    </button>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </li>
+                  <li class="cart-item">
+                    <a class="cart-item-link" href="product.html">
+                      <img class="cart-item-image" src="img/hotel-3.jpg" width="48" height="48" alt="Фото гостиницы">
+                      <h3 class="cart-item-title">Villas at Poco Diablo</h3> 
+                      <p class="cart-item-type">Аппартаменты</p>
+                    </a>
+                    <button type="button" class="cart-item-button button">
+                      <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g opacity="0.2">
+                        <path d="M15.3 2.3H13.1H2.8H0.6C0.3 2.3 0 2.5 0 2.8C0 3.1 0.3 3.4 0.6 3.4H2.3V15.4C2.3 15.7 2.6 16 2.9 16H13.1C13.4 16 13.7 15.7 13.7 15.4V3.4H15.4C15.7 3.4 16 3.1 16 2.8C16 2.5 15.6 2.3 15.3 2.3ZM12.5 14.8H3.4V3.4H12.5V14.8Z" fill="black"/>
+                        <path d="M6.19995 1.2H9.59995C9.89995 1.2 10.2 0.9 10.2 0.6C10.2 0.3 9.99995 0 9.69995 0H6.19995C5.89995 0 5.69995 0.3 5.69995 0.6C5.69995 0.9 5.89995 1.2 6.19995 1.2Z" fill="black"/>
+                        <path d="M6.2001 12C6.5001 12 6.8001 11.7 6.8001 11.4V5.7C6.8001 5.4 6.5001 5.1 6.2001 5.1C5.9001 5.1 5.6001 5.4 5.6001 5.7V11.4C5.7001 11.7 5.9001 12 6.2001 12Z" fill="black"/>
+                        <path d="M9.7001 12C10.0001 12 10.3001 11.7 10.3001 11.4V5.7C10.3001 5.4 10.0001 5.1 9.7001 5.1C9.4001 5.1 9.1001 5.5 9.1001 5.7V11.4C9.1001 11.7 9.3001 12 9.7001 12Z" fill="black"/>
+                        </g>
+                        </svg>
+                    </button>
+                    <span class="visually-hidden">Удалить из корзины</span>
+                  </li>
+                </ul>
+                <button type="submit" class="buttoт button-all-favorites">
+                  ВСЕ ИЗБРАННЫЕ
+               </button>
+              </div>
+
+            </div>
           </li>
           <li class="navigation-item-button">
             <a class="button button-navigation" href="#"> 
@@ -178,14 +230,14 @@
             Только полезная информация и никакого спама, честное бойскаутское!
           </p>
           <form class="mailing-form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="input-field" type="email" name="email" value="Ваш e-mail" id="your-mail">
+            <input class="mailing-form-input input-field" type="email" name="email" value="Ваш e-mail" id="your-mail">
             <button class="button mailing-submit" type="submit">ПОДПИСАТЬСЯ</button>
           </form>
         </section>
       </div>
     </main>
 
-    <!--Подвал-->
+    <!--Футер-->
     <footer class="page-footer">
       <div class="page-footer-container">
         <!--Социальные сети-->
@@ -227,6 +279,61 @@
         </a>
       </div>
     </footer>
+    <div class="modal-container <!--modal-container-close-->">
+      <div class="modal modal-auth">
+        <button class="modal-close-button">
+          <span class="visually-hidden">Закрыть</span>
+        </button>
+        <section class="modal-content">
+          <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
+          <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="fild-group fild-group-arrival">
+              <label class="arrival-date" for="arrival"> 
+                Дата заезда
+              </label>
+              <input class="arrival-date-fild fild" type="text" id="arrival" name="arrival">
+            </p>
+            <p class="description-warning">Мы не можем отправить вас в прошлое.</p>
+            <p class="fild-group fild-group-exit">
+              <label class="exit-date" for="exit"> 
+                Дата выезда
+              </label>
+              <input class="exit-date-fild fild" type="text" id="exit" name="exit">
+            </p>
+            <p class="description">На эти даты есть свободные номера. Пока есть.</p>
+            <p class="fild-group fild-group-adults">
+              <label class="adults-fild" for="adults"> 
+                Взрослые
+              </label>
+              <input class="adults-date-fild fild" type="text" id="adults" name="adults">
+            </p>
+            <p class="fild-group fild-group-children">
+              <label class="children-fild" for="children"> 
+                Дети
+              </label>
+              <button class="info-open-button">
+                <span class="visually-hidden">Открыть</span>
+              </button>
+              <input class="children-date-fild fild" type="text" id="children" name="children">
+              <div class="modal-popover modal-popover-cart modal-popover-open ">
+                <div class="modal-popover-content">
+                  <h2 class="visually-hidden">Укажите количество детей</h2>
+                  <p class="cart-description"> 
+                    Укажите количество детей, которые будут с вами, 
+                    возраст которых от 6 до 18 лет.
+                     Дети до 6 лет размещаются бесплатно.
+                  </p>
+                </div>
+              </div>
+            </p>
+            <button class=" auth-form-button" type="submit">Найти</button>
+
+          </form>
+        </section>
+
+      </div>
+      
+
     </div>
   </body>
 </html>
