@@ -55,11 +55,8 @@
                Понравилось
               </span>
             </a>
-            <div class="popover popover-cart popover-open">
-              <!--<button class="popover-close-button button button-light">
-                2
-                <span class="visually-hidden">Закрыть</span>
-              </button>-->
+            <div class="popover popover-cart <!--popover-open-->">
+              
               
               <div class="popover-content">
                 <h2 class="visually-hidden">Избранные</h2>
@@ -289,32 +286,57 @@
           <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
             <p class="fild-group fild-group-arrival">
               <label class="arrival-date" for="arrival"> 
-                Дата заезда
+                Дата заезда:
               </label>
-              <input class="arrival-date-fild fild" type="text" id="arrival" name="arrival">
+
+              <input class="arrival-date-fild fild" type="text" id="arrival" name="arrival" value="27  апреля 2020">
             </p>
             <p class="description-warning">Мы не можем отправить вас в прошлое.</p>
             <p class="fild-group fild-group-exit">
               <label class="exit-date" for="exit"> 
-                Дата выезда
+                Дата выезда:
               </label>
-              <input class="exit-date-fild fild" type="text" id="exit" name="exit">
+              <input class="exit-date-fild fild" type="text" id="exit" name="exit" value="1 сентября 2021">
             </p>
             <p class="description">На эти даты есть свободные номера. Пока есть.</p>
             <p class="fild-group fild-group-adults">
-              <label class="adults-fild" for="adults"> 
-                Взрослые
+              <label class="adults-fild">
+                Взрослые:
               </label>
-              <input class="adults-date-fild fild" type="text" id="adults" name="adults">
+              <button class="button-minus">
+                <svg class="button-icon"  width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input class="adults-date-fild " type="text" id="adults" name="adults" value="2">
+              <button class="button-plus">
+                <svg class="button-icon"  width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden">Плюс</span>
+              </button>
             </p>
             <p class="fild-group fild-group-children">
               <label class="children-fild" for="children"> 
-                Дети
+                Дети:
               </label>
               <button class="info-open-button">
                 <span class="visually-hidden">Открыть</span>
               </button>
-              <input class="children-date-fild fild" type="text" id="children" name="children">
+              <button class="button-minus">
+                <svg class="button-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden">Минус</span>
+              </button>
+              <input class="children-date-fild" type="text" id="children" name="children" value="1">
+              <button class="button-plus">
+                <svg class="button-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                </svg>
+                <span class="visually-hidden">Плюс</span>
+              </button>
               <div class="modal-popover modal-popover-cart <!--modal-popover-open--> ">
                 <div class="modal-popover-content">
                   <h2 class="visually-hidden">Укажите количество детей</h2>
@@ -327,13 +349,9 @@
               </div>
             </p>
             <button class=" auth-form-button" type="submit">Найти</button>
-
           </form>
         </section>
-
       </div>
-      
-
     </div>
   </body>
 </html>

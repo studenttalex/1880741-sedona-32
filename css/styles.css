@@ -2,14 +2,14 @@
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 400;
-    src: url("fonts/ptsans-400.woff2") format("woff2");
+    src: url("../fonts/ptsans-400.woff2") format("woff2");
     font-display:swap;
 }
 @font-face {
     font-family: "PT Sans";
     font-style: normal;
     font-weight: 700;
-    src: url("fonts/ptsans-700.woff2") format("woff2");
+    src: url("../fonts/ptsans-700.woff2") format("woff2");
     font-display:swap;
 }
 
@@ -45,6 +45,8 @@ body {
     cursor: pointer;
     width: 151px;
     height: 37px;
+    padding-top: 9px;
+    padding-bottom: 10px;
     text-align: center;
 }
 /*кнопка В избранноe*/
@@ -65,15 +67,29 @@ body {
     border: none;
 }
 /*кнопка Хочу сюда*/
-.button.button-navigation {
+.button .button-navigation {
     width: 160px;
     height: 37px;
     margin:0;
     padding: 0;
     padding-top: 9px;
     padding-bottom: 10px;
+    background-color: #726557;
 }
-/*кнопка Подписатся*/
+.button .button-navigation:hover {
+    background-color: #615048;
+}
+  
+.button .button-navigation:focus {
+    outline: 3px solid #83b3d3;
+    border-radius: 4px;
+}
+.button .button-navigation:visited {
+    background-color: #605048;
+    opacity: 0.3;
+}
+
+/*кнопка Подписаться*/
 .button.mailing-submit {
     width: 200px;
     height: 60px;
@@ -289,7 +305,7 @@ body {
 .popover {
     position: absolute;
     top: 50px;
-    right: -200px;
+    right: -185px;
     z-index: 1;
     box-sizing: border-box;
     width: 400px;
@@ -301,10 +317,26 @@ body {
     box-shadow: 0px 25px 50px rgba(0, 0, 0, 0.15);
     border-radius: 20px;
     display: none;
+    background-image: url("../img/indicatorpopap.svg");
+    background-repeat: no-repeat;
+    background-position:50% -4% ;
 }
+/*Открыть поповер*/
 .popover-open {
     display: block;
 }
+.popover:after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: #ffffff;
+    transform: rotate(45deg); 
+    top: -9px;
+    left: 200px;
+    z-index: 2;
+    
+ }
 /*
 .popover-close-button {
     position: absolute;
@@ -314,8 +346,10 @@ body {
     height: 72px;
 }*/
 .popover-content {
+    
     height: 100%;
 }
+
 .cart-item {
     display: flex;
     width: 350px;
@@ -428,14 +462,14 @@ body {
     margin-top: 26px;
 }
 .button-all-favorites:hover {
-    color: #756257;
-    background-color: wheat;
+   
+    background-color:#615048;
 
 }
   
 .button-all-favorites:focus {
-    color: #756257;
-    background-color: wheat;
+   
+    background-color: #615048;
     border: 3px solid #83B3D3;
   }
 
@@ -986,6 +1020,7 @@ body {
     top: 0;
     left: 0;
     display: flex;
+    flex-direction: column;
     width: 100%;
     height: 100%;
     background-color: rgba(242, 242, 242, 0.8);
@@ -996,13 +1031,14 @@ body {
 .modal {
     position: relative;
     margin: auto;
-    padding: 62px;
+    align-items: stretch;
+    justify-content: space-between;
     background-color: #ffffff;
     border-radius: 30px;
 }
 .modal-auth {
     width: 715px;
-    
+    height: 561px;
 }
 .modal-close-button {
     position: absolute;
@@ -1026,7 +1062,7 @@ body {
     position: absolute;
     padding: 0;
     top: 10px;
-    right: 200px;
+    right: 158px;
     width: 25px;
     height: 25px;
     background-color: #83b3d3;
@@ -1039,9 +1075,40 @@ body {
     
 
 }
+.button-minus,
+.button-plus {
+    padding: 0;
+    margin: 0;
+    width: 44px;
+    height: 50px;
+    background-color: #f2f2f2;
+    border: none;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin:auto;
+    cursor: pointer;
+}
+.button-icon path {
+    fill: #000000;
+    opacity: 0.3;
+  }
+.button-icon:hover path {
+    fill: #000000;
+  }
+  
+.button-icon:focus path {
+    fill: #000000;
+    padding: 10px;
+    border: 3px solid #83B3D3;
+    border: none;
+    border-radius: 4px;
+  }
 .modal-title {
     margin:0;
     padding: 0;
+    margin-top: 62px;
     margin-bottom: 32px;
     font-size: 30px;
     line-height: 40px;
@@ -1060,20 +1127,16 @@ body {
     margin-right: 70px;
 }
 .fild {
-    
-    margin-left: 32px;
     font-size: 18px;
     line-height: 40px;
     font-weight: 700;
     color:#000000;
-
 }
 .fild-group {
     display: flex;
     position: relative;
     margin:0;
     padding: 0;
-    
     font-size: 18px;
     line-height: 40px;
     font-weight: 700;
@@ -1088,6 +1151,7 @@ body {
     font-weight: 400;
     color:#ff5757;
     margin-bottom: 11px;
+    
 }
 .description {
     margin:0;
@@ -1106,8 +1170,29 @@ body {
     grid-row-end: 2;
     width: 576px;
     height: 50px;
-    
 }
+.arrival-date,
+.exit-date
+ {
+    width: 155px;
+    height: 50px;
+}
+.adults-fild
+ {
+    display: flex;
+    justify-content: space-between;
+    width: 155px;
+    height: 50px;
+}
+.children-fild
+ {
+    width: 54px;
+    height: 50px;
+    margin-left: 57px;
+    margin-right: 43px;
+}
+
+
 .arrival-date-fild,
 .exit-date-fild {
     width: 420px;
@@ -1117,19 +1202,23 @@ body {
     border: none;
     background-image: url("../img/calendar.svg");
     background-repeat: no-repeat;
-    background-position: 386px 18px;
+    background-position: 395px 18px;
+    padding-left: 19px;
     
     
 }
 .adults-date-fild,
 .children-date-fild {
-    width: 133px;
+    margin: 0;
+    padding: 0;
+    width: 44px;
     height: 50px;
     background: #F2F2F2;
-    border-radius: 4px;
+    text-align: center;
     border: none;
    
 }
+
 
 .description-warning {
     grid-column-start: 1;
@@ -1205,7 +1294,7 @@ body {
 .modal-popover {
     position: absolute;
     top: 365px;
-    right: 200px;
+    right: 110px;
     z-index: 10;
     box-sizing: border-box;
     width: 256px;
@@ -1218,6 +1307,7 @@ body {
     display: none;
 
 }
+/*Открыть поповер модельного окна*/
 .modal-popover-open {
     display: block;
 }
@@ -1236,6 +1326,25 @@ body {
     margin-bottom: 18px;
 
 }
+.triangle-with-shadow {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    overflow: hidden;
+    
+ }
+ .modal-popover:after {
+    content: "";
+    position: absolute;
+    width: 19px;
+    height: 19px;
+    background: #333333;
+    transform: rotate(45deg); 
+    top: -9px;
+    left: 120px;
+    z-index: 2;
+    
+ }
 /*Страница каталога*/
 
 .main-inner {
@@ -1518,8 +1627,11 @@ body {
     border-radius: 2px;
   }
   .range-bar {
+    
     height: 4px;
-    margin-top:32px;
+    
+    background-color: #ffffff;
+    z-index: 4;
     background-color: #ffffff;
   }
 .range-wrapper-inputs {
@@ -1527,31 +1639,31 @@ body {
     display: flex;
     justify-content: center;
   }
-  .range-toggle {
+.range-toggle {
     background: #ffffff;
     border: 2px solid #ffffff;
     border-radius: 5px;
     cursor: pointer;
   }
   
-  .range-toggle:hover {
+.range-toggle:hover {
     background-color: #ffffff;
   }
-  .range-toggle:active,
-  .range-toggle:focus {
+.range-toggle:active,
+.range-toggle:focus {
     outline: 3px solid #8383d3;
   } 
-  .toggle-min {
+.toggle-min {
     position: absolute;
-    top: 22px;
+    top: -7px;
     left: -5px;
     width: 20px;
     height: 20px;
   }
   
-  .toggle-max {
+.toggle-max {
     position: absolute;
-    top: 22px;
+    top: -7px;
     right:45px;
     width: 20px;
     height: 20px;
