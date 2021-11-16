@@ -459,7 +459,7 @@ body {
     width: 400px;
     height: 60px;
     text-align: center;
-    margin-top: 26px;
+    margin-top: 36px;
 }
 .button-all-favorites:hover {
    
@@ -491,7 +491,7 @@ body {
     position: relative;
 	z-index: 20; 
     align-items: center;
-    right: 63px;
+    right: calc(50%-70px);
     
   }
 /*Выравнивание и тень*/
@@ -597,7 +597,7 @@ body {
     height: 384px;
     
 }
-.advantages-title-white {
+ {
     margin-top: 98px;
     margin-bottom: 25px;
     margin-left: 90px;
@@ -633,8 +633,11 @@ body {
     flex-direction: column;
 }
 .advantages-title {
+    width: 180px;
     margin-top:98px;
-    margin-bottom: 25 ;
+    margin-bottom: 25px;
+    margin-left: auto;
+    margin-right: auto;
 }
 .advantages-description-1 {
     margin-bottom:26px ;
@@ -690,6 +693,9 @@ body {
     background-color: #83B3D3;
 }
 .advantages-title-white {
+    margin: 0;
+    padding: 0;
+    margin-top: 98px;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -722,6 +728,7 @@ body {
 
 /*Позиционирование иконок*/
 .advantages-icon{
+    
     margin-left: 162px;
     margin-right: 163px;
     margin-top: 89px;
@@ -732,6 +739,8 @@ body {
 .advantages-housing-title,
 .advantages-eat-title,
 .advantages-souvenirs-title {
+    margin:0;
+    padding: 0;
     font-size: 24px;
     line-height: 28px;
     font-weight: 700;
@@ -745,7 +754,7 @@ body {
     line-height: 21px;
     font-weight: 400;
     text-align: center;
-    width: 300px;
+    width: 230px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -844,7 +853,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     font-weight: 700;
-    margin-top:94px ;
+    margin-top:94px;
     margin-left:auto;
     margin-right: auto;
     margin-bottom: 15px;
@@ -2073,8 +2082,7 @@ select {
     grid-column-end: 3;
     grid-row-start: 2;
     grid-row-end: 3;
-    margin-top: auto;
-    margin-right: auto;
+    
 
 }
 .mailing-description {
@@ -2082,7 +2090,7 @@ select {
     grid-column-end: 3;
     grid-row-start: 4;
     grid-row-end: 5;
-    width: 720px;
+    width: 520px;
     margin-top: auto;
     margin-right: auto;
     text-align: center;
