@@ -348,7 +348,7 @@ img {
     border-radius: 5px;
 }
 
-.navigation-link:visited {
+.navigation-link:active {
     color: #756257;
     opacity: 0.3;
 }
