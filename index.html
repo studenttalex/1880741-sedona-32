@@ -57,7 +57,7 @@
                 </span>
               </a>
                <!--Для открытия  поповера добавить: popover-open -->
-              <div class="popover popover-cart popover-open">
+              <div class="popover popover-cart">
                 <div class="popover-content">
                   <h2 class="visually-hidden">Избранные</h2>
                   <ul class="cart-items-list">
@@ -297,7 +297,7 @@
       </footer>
       <!--Модальное окно-->
       <!--Для закрытия модального окна добавить:modal-container-close  -->
-      <div class="modal-container ">
+      <div class="modal-container modal-container-close">
         <div class="modal modal-auth">
           <button class="modal-close-button" type="button">
             <span class="visually-hidden">Закрыть</span>
@@ -305,71 +305,75 @@
           <section class="modal-content">
             <h2 class="modal-title">ПОИСК ГОСТИНИЦЫ В СЕДОНЕ</h2>
             <form class="modal-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="fild-group fild-group-arrival">
+              <div class="fild-group fild-group-arrival">
                 <label class="arrival-date" for="arrival">
                   Дата заезда:
                 </label>
                 <input class="arrival-date-fild fild" type="text" id="arrival" name="arrival" value="27  апреля 2020">
-              </p>
+              </div>
               <p class="description-warning">Мы не можем отправить вас в прошлое.</p>
-              <p class="fild-group fild-group-exit">
+              <div class="fild-group fild-group-exit">
                 <label class="exit-date" for="exit">
                   Дата выезда:
                 </label>
                 <input class="exit-date-fild fild" type="text" id="exit" name="exit" value="1 сентября 2021">
-              </p>
+              </div>
               <p class="description">На эти даты есть свободные номера. Пока есть.</p>
-              <p class="fild-group fild-group-adults">
-                <label class="adults-fild" for="adults">
-                  Взрослые:
-                </label>
-                <button class="selection-button button-minus" type="button">
-                  <svg class="button-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Минус</span>
-                </button>
-                <input class="adults-date-fild" type="text" id="adults" name="adults" value="2">
-                <button class="selection-button button-plus" type="button">
-                  <svg class="button-icon"  width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Плюс</span>
-                </button>
-              </p>
-              <p class="fild-group fild-group-children">
-                <label class="children-fild" for="children">
-                  Дети:
-                </label>
-                <button class="info-open-button" type="button">
-                  <span class="visually-hidden">Открыть</span>
-                </button>
-                <button class="selection-button button-minus" type="button">
-                  <svg class="button-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Минус</span>
-                </button>
-                <input class="children-date-fild" type="text" id="children" name="children" value="1">
-                <button class="selection-button button-plus" type="button">
-                  <svg class="button-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
-                  </svg>
-                  <span class="visually-hidden">Плюс</span>
-                </button>
-                <!--Поповер модального окна-->
-                <!--Для открытия поповера модального окна добавить: modal-popover-open -->
-                <div class="modal-popover modal-popover-cart">
-                  <div class="modal-popover-content">
-                    <h2 class="visually-hidden">Укажите количество детей</h2>
-                    <div class="cart-description">
-                      Укажите количество детей, которые будут с вами,
-                      возраст которых от 6 до 18 лет.
-                      Дети до 6 лет размещаются бесплатно.
+              <div class="fild-visitors">
+                <div class=" fild-group-adults">
+                  <label class="adults-fild" for="adults">
+                    Взрослые:
+                  </label>
+                  <button class="selection-button button-minus" type="button">
+                    <svg class="button-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class="adults-date-fild" type="text" id="adults" name="adults" value="2">
+                  <button class="selection-button button-plus" type="button">
+                    <svg class="button-icon"  width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                </div>
+                <div class="fild-group-children">
+                  <label class="children-fild" for="children">
+                    Дети:
+                  </label>
+                  <button class="info-open-button" type="button">
+                    <span class="visually-hidden">Открыть</span>
+                  </button>
+                  <button class="selection-button button-minus" type="button">
+                    <svg class="button-icon" width="13" height="1" viewBox="0 0 13 1" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path opacity="0.3" d="M0 0L0 1L13 1V0L0 0Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Минус</span>
+                  </button>
+                  <input class="children-date-fild" type="text" id="children" name="children" value="1">
+                  <button class="selection-button button-plus" type="button">
+                    <svg class="button-icon" width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M13 6H7V0H6V6H0V7H6V13H7V7H13V6Z" fill="black"/>
+                    </svg>
+                    <span class="visually-hidden">Плюс</span>
+                  </button>
+                  <!--Поповер модального окна-->
+                  <!--Для открытия поповера модального окна добавить: modal-popover-open -->
+                  <div class="modal-popover modal-popover-cart">
+                    <div class="modal-popover-content">
+                      <h2 class="visually-hidden">Укажите количество детей</h2>
+                      <div class="cart-description">
+                        Укажите количество детей, которые будут с вами,
+                        возраст которых от 6 до 18 лет.
+                        Дети до 6 лет размещаются бесплатно.
+                      </div>
                     </div>
                   </div>
                 </div>
-              </p>
+
+              </div>
+
               <button class=" auth-form-button" type="button">Найти</button>
             </form>
           </section>
