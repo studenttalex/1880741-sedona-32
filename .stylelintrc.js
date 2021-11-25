@@ -1,6 +1,11 @@
+
+
+
+
 'use strict'
 
 module.exports = {
+  "extends": "stylelint-config-htmlacademy",
   rules: {
     'block-no-empty': true,
     'comment-no-empty': true,
